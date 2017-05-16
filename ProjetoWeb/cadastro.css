@@ -1,0 +1,172 @@
+body{
+	background:linear-gradient(to right,#5892ef,#53c6db);
+	font-family:Century gothic;
+}
+.menu{
+	width:100%;
+	position:absolute;
+	right:0px;
+	top:0px;
+	background-color:white;
+}
+.menu a{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	line-height:40px;
+}
+.menu a:hover{
+	color:grey;
+	padding-bottom:15px;
+	border-bottom:3px solid grey;
+}
+.menu li{
+	display:block;
+	/* block- retira a bolinha e deixa os ícones embaixo do outro*/
+	/* inline- retira a bolinha e deixa os ícones um do lado do outro*/
+}
+
+/*deixar o formulario abaixo do menu fixo*/
+section{
+	padding-top:250px;
+}
+form h2{
+	font-family:Century Gothic;
+	color:white;
+	font-size:30px;
+}
+span{
+	font-family:Century Gothic;
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+}
+form button{
+	background-color:white;
+	font-family:Century Gothic;
+	font-weight:bold;
+	padding:9px;
+	cursor:pointer;
+}
+.separador{
+	width:100%;
+}
+.artigo h1{
+	color:white;
+}
+.artigo p{
+	color:grey;
+	background-color:white;
+	font-weight:bold;
+	font-size:14px;
+	text-align:justify;
+	padding:10px;
+	border-radius:5px;
+}
+footer{
+	width:100%;
+	float:left;
+	text-align:center;
+	position:absolute;
+	left:0px;
+	background-color:#130400;
+	margin-top:10%; /*posicionar o footer no final da página*/
+}
+.rodape .redesSociais img{
+	margin-top:2%;
+}
+.rodape .redesSociais a{
+	opacity:0.5;
+	margin-right:2%;
+}
+.rodape .redesSociais a:hover{
+	opacity:1;
+}
+.rodape .copyright{
+	color:white;
+	font-weight:bold;
+	font-size:12px;
+}
+@media screen and (min-width:550px){
+	.menu li{
+		display:inline-block;
+		padding: 0 0 0 25px;
+	}
+	section{
+		padding-top:100px;
+	}
+}
+@media screen and (min-width:640px){
+	.menu li{
+		padding: 0 0 0 30px;
+	}
+	.separador .artigo{
+		width:49%;
+		float:left;
+		margin-right:2%;
+	}
+	.artigo:nth-child(2){ /*irá aplicar o CSS apenas no segundo elemento*/
+		margin-right:0;
+	}
+	.artigo:nth-child(4){ /*irá aplicar o CSS apenas no segundo elemento*/
+		margin-right:0;
+	}
+	footer{
+		margin-top:70%; /*posicionar o footer no final da página*/
+	}
+}
+@media screen and (min-width:768px){
+	footer{
+		margin-top:55%; /*posicionar o footer no final da página*/
+	}
+}
+@media screen and (min-width:1024px){
+	.menu li{
+		padding: 0 0 0 10%;
+	}
+	.separador .artigo{
+		width:32%;
+		float:left;
+		margin-right:2%;
+	}
+	.artigo:nth-child(2){ /*irá aplicar o CSS apenas no segundo elemento*/
+		margin-right:2%;
+	}
+	.artigo:nth-child(3){ /*irá aplicar o CSS apenas no segundo elemento*/
+		margin-right:0;
+	}
+	.artigo:nth-child(4){ /*irá aplicar o CSS apenas no segundo elemento*/
+		margin-right:2%;
+	}
+	footer{
+		margin-top:50%; /*posicionar o footer no final da página*/
+	}
+}
+@media screen and (min-width:1280px){
+	section{
+		margin-left:10%;
+	}
+	.separador{
+		width:50%;
+		margin-top:-500px;
+		margin-left:43%;
+	}
+	.separador .artigo{
+		width:43%;
+		float:left;
+		margin-right:8%;
+	}
+	.artigo:nth-child(2){ /*irá aplicar o CSS apenas no segundo elemento*/
+		margin-right:0;
+	}
+	.artigo:nth-child(4){ /*irá aplicar o CSS apenas no segundo elemento*/
+		margin-right:0;
+	}
+	footer{
+		margin-top:40%; /*posicionar o footer no final da página*/
+	}
+}
+
+
+
